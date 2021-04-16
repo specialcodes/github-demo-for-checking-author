@@ -1,0 +1,212 @@
+@-webkit-keyframes particles-rotate {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes particles-rotate {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+}
+
+.animation-particles-rotate {
+    -webkit-animation: particles-rotate 10s linear infinite;
+    animation: particles-rotate 10s linear infinite;
+    opacity: .9;
+    mix-blend-mode: screen;
+}
+
+@-webkit-keyframes space-float {
+    0% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+}
+
+@keyframes space-float {
+    0% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+}
+
+.animation-space-float {
+    -webkit-animation: space-float 3s ease-in-out infinite alternate;
+    animation: space-float 3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animation-fade-in {
+    -webkit-animation: fade-in .4s ease-in-out;
+    animation: fade-in .4s ease-in-out;
+}
+
+#drawer-button img {
+    width: 40px;
+    -webkit-filter: brightness(125%);
+    filter: brightness(125%);
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear;
+}
+
+#drawer-button img:hover {
+    cursor: pointer;
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+}
+
+@media screen and (max-width: 980px) {
+    #drawer-button {
+        display: block;
+    }
+}
+
+#black-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000000;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.black-background-visible {
+    display: block !important;
+}
+
+#hamburger-container {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    #hamburger-container {
+        display: initial;
+    }
+}
+
+#drawer {
+    position: fixed;
+    width: 70%;
+    max-width: 288px;
+    background-color: black;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    left: -71%;
+    padding: 20px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-transition: 0.15s linear;
+    transition: 0.15s linear;
+    z-index: 2000000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#drawer a {
+    text-decoration: none;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 3000000;
+    border-bottom: none;
+    border-left: 0.5rem solid rgba(0, 0, 0, 0);
+    padding: 10px 2px 2px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: -10px;
+}
+
+#drawer a:hover {
+    border-left: 0.5rem solid rgba(255, 255, 255, 0.85);
+}
+
+#drawer a.active {
+    font-weight: bolder;
+    color: #29abe2;
+}
+
+.drawer-visible {
+    left: 0rem !important;
+}
+
+.list_element .fa {
+    margin-right: 10px;
+    font-size: 40px;
+    width: 50px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.elements {
+    font-family: Gilroy-Light;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.hamPosition {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: -30px;
+}
+
+.social__links{
+    display: flex;
+    flex-direction: row;
+}
