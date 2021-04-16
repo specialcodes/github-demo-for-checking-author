@@ -31,7 +31,7 @@ class Footer extends Component{
                                     </NavLink>
                                 </div>
                                 <div className="footer_l__links_content">
-                                    <a className="footer_l__links_cn" target="_blank" href="https://inceptionwave.in/home">
+                                    <a className="footer_l__links_cn" target="_blank" rel="noreferrer" href="https://inceptionwave.in/home">
                                         IW Official Site
                                     </a>
                                 </div>
@@ -61,17 +61,17 @@ class Footer extends Component{
                                     </div>
                                 </div>
                                 <div className="footer_l__contact_content">
-                                    <a target="_blank" href="mailto:iwscsrm@gmail.com" className="footer_l__contact_cn"><b>Email</b>: iwscsrm@gmail.com</a>
+                                    <a target="_blank" rel="noreferrer" href="mailto:iwscsrm@gmail.com" className="footer_l__contact_cn"><b>Email</b>: iwscsrm@gmail.com</a>
                                 </div>
                                 <div className="footer_l__contact_content">
-                                    <a target="_blank" href="https://goo.gl/maps/WFEtisM2Cd918eU76" className="footer_l__contact_cn"><b>Address</b>: SRM Institute of Science&Technology,<div className="footer_l__contact_gmap">Near Potheri Railway Station,Kattankulathur-603203</div></a>
+                                    <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/WFEtisM2Cd918eU76" className="footer_l__contact_cn"><b>Address</b>: SRM Institute of Science&Technology,<div className="footer_l__contact_gmap">Near Potheri Railway Station,Kattankulathur-603203</div></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="footer-bottom">
                         <span>Made with 🍵❤</span>
-                        <span>Developed by IWSC SRM <img src="logos.png" /></span>
+                        <span>Developed by IWSC SRM <img src="logos.png" alt="IWSC-SRM" /></span>
                     </div>
             </div>    
         )
