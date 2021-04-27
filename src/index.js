@@ -4,12 +4,13 @@ import Home from "./Components/Home/Home.jsx";
 import{Switch,BrowserRouter,Route} from "react-router-dom";
 import "./fonts.css";
 import "./scss/_base.scss";
-
+import Team from "./Components/Team/Team";
 class App extends Component{
   render() {
     return (
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/team" component={Team} />
       </Switch>
     );
   }}
